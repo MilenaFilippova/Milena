@@ -1,0 +1,22 @@
+
+#include <iostream> //Стандартные классы ввода-вывода
+#include <math.h> //Различные определения, используемые библиотекой math
+#include <locale.h> 
+
+using namespace std;
+
+int main(void)
+{
+	long long i,sum,result=1;
+	sum=1;
+	for (i=2;i<=10;i++)
+	{
+		sum+=i;
+		result*=sum;
+		cout<<result<<endl;
+	}
+
+	cout << "(1+2)*(1+2+3)*...*(1+2+...+10)"<< "=" <<result; 
+	system ("pause");
+	return 0 ;
+}
