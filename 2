@@ -1,0 +1,26 @@
+#include <iostream>
+#include <locale.h>
+using namespace std;
+int main(void)
+{
+    int a,b,d,m;
+    cout << "Enter 2 natural numbers: \n";
+     
+    cin >> a>> b;
+    m = a > b ? a : b;                       //Узнаем какое из них больше и занесём его в переменную 
+        for (d = m ;d >= 2 ; d--)
+        {
+            if (((a%d==0) && (b%d==0)))
+            break;                          //Если оба числа делятся без остатка на d, то это и есть max кратное  
+        }
+        if  (d==1) 
+        {
+            cout << "There is no common divisor"<<endl;                             //"Нет общего делителя";
+        }   
+        else 
+        {
+            cout << "The smallest common divisor:" << d << endl;                       // "Наименьший общий делитель: "
+        }
+
+     return 0;
+ }
