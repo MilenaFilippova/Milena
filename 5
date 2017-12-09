@@ -1,0 +1,27 @@
+#include <locale.h>
+#include <iostream>
+using namespace std;
+int main(void) 
+{
+
+	int sum,a,n;
+	sum=0;
+	a=1; 
+	do 
+	{
+		sum=sum+a;
+		if (a<1024)
+		{
+		    cout << a << " + " ;
+		} 
+		else
+		{
+		    cout << a ;
+		} 
+		
+		a=2*a;
+	}
+	while (a<=1024);
+		cout << " = " << sum << endl;
+	return 0;
+}
