@@ -1,0 +1,27 @@
+//15. Программа нахождения всех трехзначных чисел сумма цифр которых равна заданному числу 
+#include<iostream>
+#include <locale.h>
+#include <cmath>
+using namespace std;
+ 
+int main(void) 
+{
+
+	int y;
+	cout <<"Enter the number"<<endl;						// Введите число  
+	cin >>y;
+	if (y<28)
+	{
+		for (int i=100;i<1000;i++)
+        {
+               if((i%10+i/100+((i-i%10)/10)%10)==y)
+               {
+                  cout << i << endl;
+
+               }
+        }
+	}
+	else
+	cout << "This number does not fit." << endl;  //Это число не подходит.
+	return 0;
+}
