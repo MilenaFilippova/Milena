@@ -5,13 +5,13 @@ using namespace std;
 int main(void) 
 {
 	int i, n,b;
-	cout <<	"Enter the time in minutes"	<<endl;				// "Введите время в минутах "\n"; 
+	cout <<	"Enter the time in minutes"<<endl;				// Введите время в минутах ; 
 	cin >> n;
 	b=1;
 		for (i = 1; i<=n ; i++)
 		{
 			b=b*2;
 		}
-		cout <<"The number of bacteria = "<<b<<endl;               //"Количество бактерий =  " << b ;
+		cout <<"The number of bacteria = "<<b<<endl;               //Количество бактерий =   ;
 	return 0;
 }
