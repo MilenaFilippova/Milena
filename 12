@@ -1,0 +1,19 @@
+#include <locale.h>
+#include <cmath>
+#include <iostream>
+using namespace std;
+int main(void) 
+{
+    int n1, n2;
+		for ( int i=42040; i<42959; i++ )
+		{ 
+			if ( !( i % 72 ) && ( i / 10 ) % 10 == 4 ) 
+			{
+				n1 = ( i / 100 ) % 10;
+				n2 = i % 10;
+			}       
+		} 
+		cout << "Numbers are missing: " << n1 << " and " << n2 <<" or "<< n2 <<" and "<< n1 << endl;  		//Пропущены цифры:
+	return 0;
+}
+
