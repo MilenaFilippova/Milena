@@ -22,6 +22,8 @@ int main(void)
         }
 	}
 	else
-	cout << "This number does not fit." << endl;  //Это число не подходит.
+	{
+		cout << "This number does not fit." << endl;  //Это число не подходит.
+	}	
 	return 0;
 }
