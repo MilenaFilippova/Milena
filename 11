@@ -1,0 +1,36 @@
+#include <locale.h>
+#include <cmath>
+#include <iostream>
+using namespace std;
+int main(void) 
+{
+    int b,n,a;
+    n=0;
+		cout <<	"Enter the number"<<endl;						// "Введите число "\n"; 
+		cin >> b;
+
+		for (int a=3;a<=b;a++)
+		{
+			n=0;
+			for (int i=1; i<a; i++)
+			{
+				if(a%i==0)
+				{
+				    n++;				 
+				}
+			}
+			if(n<2)
+			{
+				cout <<a<<endl;
+			}	
+			
+		}
+		
+		
+ 
+		
+
+ 
+    
+    system("pause");
+}
