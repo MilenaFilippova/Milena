@@ -2,7 +2,7 @@
 #include <cmath>
 #include <iostream>
 using namespace std;
-int main()
+int main(void)
 { 
 	for (int i=10; i<=99; i++)
 	{
