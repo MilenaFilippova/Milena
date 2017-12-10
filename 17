@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <locale.h>
+#include <cmath>
+#include <iostream>
+using namespace std;
+int main(void)
+{ 
+    int s;
+    for (int i=10; i<=99; i++)
+	{
+		s = i / 10 + i % 10;
+		if (s*s*s == i*i) 
+		{
+			cout <<i<< endl;
+		}	
+  }
+	return 0;
+}
