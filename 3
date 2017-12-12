@@ -1,0 +1,26 @@
+#include <iostream> //Стандартные классы ввода-вывода
+#include <math.h> //Различные определения, используемые библиотекой math
+#include <locale.h> 
+using namespace std;
+int main(void)
+{
+ int n;
+ 
+    cout<< "Enter the number: "<<endl;					//Введите число:
+    cin>>n;
+    if (n!=0)
+    {
+        for (int i=abs(n); i>=1; i--)
+        {
+		    if ((n%i)==0)  
+		    {
+		    	cout<<i<<endl; 
+		    }
+         }
+    }     
+    else
+    {
+        cout<<"Incorrectly entered."<<endl; 
+    }
+    system("pause");
+}
