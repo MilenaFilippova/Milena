@@ -1,0 +1,30 @@
+#include <locale.h>
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(void) 
+{
+
+    double R, x, y,a,b,u;
+    int k,n; 
+    u=0;
+    cout << " Enter the number of points to check : " << endl; 
+	cin >> n ;
+    cout << " Enter the radius R =" << endl;  		                           //Введите радиус R= 
+    cin >> R;
+    cout << " Enter the coordinates of the center of the circle = " << endl;  //Введите координаты центра окружности
+    cin >> a >> b;
+    cout << " Enter the coordinates of point " << endl;			            //Введите координаты точки
+        while ( u<n)           
+        { 
+            cin >> x >> y;
+            u++;
+                if (((a-x)* (a-x) + (b-y)* (b-y)) <= (R* R))                 // проверяем чтобы сумма квадратов координат точки была меньше  радиуса в квадрате
+                {
+                    k++;
+                }
+        }
+        cout << " Belongs " << k << " points" << endl;			        //принадлежит точек
+        system("pause");
+        return 0;
+}
