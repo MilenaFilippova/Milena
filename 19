@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include <locale.h>
+#include <cmath>
+#include <iostream>
+using namespace std;
+int main(void) 
+{
+	int m ,i, j, a, b;
+	cout <<"Enter the number M"<<endl;					// Введете число M ;
+	cin >>m;
+    for (i=0; i<m; i++)
+    { 
+		for (j=0; j<m; j++)
+		{	
+			a=i*i;
+			b= j*j;
+			if (m==a+b)
+
+			{ 
+				cout <<	"It is possible, the numbers are equal:"<<i<<" and "<< j<< endl;					//Можно, числа равны:
+				 return 0; 
+			}
+        
+		}
+
+	}
+	    cout <<"It's not possible."<< endl; 				//Не возможно	
+	return 0;
+}
