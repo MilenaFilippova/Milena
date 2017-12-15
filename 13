@@ -1,0 +1,100 @@
+#include <locale.h>
+#include <cmath>
+#include <iostream>
+using namespace std;
+int main(void) 
+{
+ 
+	int year;
+    cout << "Введите год:  "<< endl;;
+	setlocale(LC_ALL,"Russian");
+    cin >> year;
+
+		switch (year % 5)
+		{
+			case 0 : 
+				if ( (year % 12)!= 6 & (year % 12)!= 7 & (year % 12)!= 8 )
+				{
+					cout <<" Год красной ";
+				}
+				else
+				{
+					cout << "Год красного ";
+				}
+				break;
+			case 1 :
+				if ( (year % 12)!= 6 & (year % 12)!= 7 & (year % 12)!= 8 )
+				{
+					cout <<" Год желтой ";
+				}
+				else
+				{
+					cout << "Год желтого ";
+				}
+				break;
+			case 2 :
+				if ( (year % 12)!= 6 & (year % 12)!= 7 & (year % 12)!= 8 )
+				{
+					cout <<" Год белой ";
+				}
+		   
+				else
+				{
+					cout << "Год белого ";
+				}
+				break;
+			case 3 : 
+				if ( (year % 12)!= 6 & (year % 12)!= 7 & (year % 12)!= 8 )
+				{
+					cout <<" Год черной ";
+				}
+		   
+				else
+				{
+					cout << "Год черного ";
+				}
+				break;
+			case 4 : 
+				if ( (year % 12)!= 6 & (year % 12)!= 7 & (year % 12)!= 8 )
+				{
+					cout <<" Год зеленой ";
+				}
+				else
+				{
+					cout << "Год зеленого ";
+				}
+				break;
+		}
+		switch (year % 12)
+		{
+			case 0 : 
+			cout <<" обезьяны" << endl;
+			break;
+			case 1 : cout <<" курицы" << endl;
+			break;
+			case 2 : cout <<" собаки" << endl;
+			break;
+			case 3 : cout <<" свиньи" << endl;
+			break;
+			case 4 : cout <<" крысы" << endl;
+			break;
+			case 5 : cout <<" коровы" << endl;
+			break;
+			case 6 : cout <<" тигра" << endl;
+			break;
+			case 7 : cout <<" зайца" << endl;
+			break;
+			case 8 : cout <<" дракона" << endl;
+			break;
+			case 9 : cout <<" змеи" << endl;
+			break;
+			case 10 : cout <<" лошади" << endl;
+			break;
+			case 11 : cout <<" овцы" << endl;
+			break;
+ 
+   }
+
+ system ("pause");
+ return 0;
+}
