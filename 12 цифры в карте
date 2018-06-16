@@ -1,3 +1,4 @@
+//пропущенные цифры в карте
 #include <locale.h>
 #include <cmath>
 #include <iostream>
