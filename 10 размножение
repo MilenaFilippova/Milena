@@ -1,3 +1,4 @@
+//размножение бактерий
 #include <locale.h>
 #include <cmath>
 #include <iostream>
